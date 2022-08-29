@@ -1,10 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-h1 {
-  font-family: Shrikhand;
-  color: #99E2D0;
+body {
+  margin: 0;
 }
 
-h1 {
-  color: #99E2D0;
+* {
+  font-family: Roboto;
+}
+
+/* ------------- HEADER -------------- */
+.header {
+  border-bottom: rgb(193, 193, 193) solid 0.3px;
+}
+
+.header__titre {
+  text-align: center;
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* ---------- SOUS HEADER -------- */
+.sous-header {
+  background-color: rgba(231, 231, 231, 0.793);
+  box-shadow: inset 0 2px 2px rgba(204, 204, 204, 0.676);
+}
+.sous-header__lien {
+  display: flex;
+  text-decoration: none;
+  padding-top: 10px;
+  justify-content: center;
+  color: rgb(72, 72, 72);
+  font-size: 11px;
+  font-weight: 600;
+}
+.sous-header__texte {
+  padding-left: 15px;
+  margin-top: 0;
+}
+
+#sous-header__logo {
+  font-size: 13.5px;
+}
+
+/* -------- TEXTE HEADER --------    */
+.texte-header {
+  text-align: center;
+  background-color: rgba(231, 231, 231, 0.355);
+}
+.texte-header__titre {
+  margin: 0 0;
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.texte-header__paragraphe {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: rgb(93, 93, 93);
+  margin-top: 9px;
 }/*# sourceMappingURL=main.css.map */

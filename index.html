@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <title>Projet 3</title>
-        <link rel="stylesheet" href="../MOBILE/main.css">
+        <link rel="stylesheet" href="./MOBILE/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <! --  CONTRAINTES : SASS & GITHUB. 
                --  MOBILE FIRST & TABLETTE & PC
@@ -14,9 +14,9 @@
 
     <body> 
 
-        <header>
+        <header class="header">
 
-            <h1>ohmyfood</h1> 
+            <h1 class="header__titre">ohmyfood</h1> 
 
         </header>
 
@@ -24,16 +24,16 @@
 
              <article>
 
-                   <section>
-                       <a href="#">
-                        <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
+                   <section class="sous-header">
+                       <a href="#" class="sous-header__lien">
+                        <i class="fa-solid fa-location-dot" id="sous-header__logo"></i><p class="sous-header__texte">Paris, Belleville</p>
                        </a>
                    </section>
                    
-                   <section>
-                     <h2>Réservez le menu qui vous convient</h2>
-                        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                        <a>Explorer nos restaurants</a>
+                   <section class="texte-header">
+                     <h2 class="texte-header__titre">Réservez le menu qui<br> vous convient</h2>
+                        <p class="texte-header__paragraphe">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
+                        <a class="texte-header__bouton">Explorer nos restaurants</a>
                    </section>
 
              </article>
