@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 h1 {
-  color: #FF79DA;
-  font-family: Roboto;
-  font-weight: 900;
-}/*# sourceMappingURL=style.css.map */
+  font-family: Shrikhand;
+  color: #99E2D0;
+}
+
+h1 {
+  color: #99E2D0;
+}/*# sourceMappingURL=main.css.map */
