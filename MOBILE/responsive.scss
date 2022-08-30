@@ -1,0 +1,76 @@
+/* TABLETTE */ 
+
+/* ----HEADER---- */ 
+
+.header__titre{
+    font-size:29px;
+}
+
+/* SOUS HEADER */ 
+
+.sous-header__lien{
+    font-size:18px;
+    padding-top:20px;
+}
+#sous-header__logo{
+    font-size:17px;
+}
+
+/* TEXTE SOUS HEADER */ 
+
+.texte-header__titre{
+    font-size:23px;
+}
+.texte-header__paragraphe{
+    font-size:16px;
+}
+.texte-header__bouton{
+    font-size:15px;
+    padding: 15px 22px;
+}
+
+/* SECTION VIGNETTES --- fonctionnement */ 
+
+.section-vignette{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.vignette{
+    padding:10px 15px;
+    &__chiffre{
+        margin-left: -24px;
+    }
+}
+
+
+/* ---- SECTION RESTAURANTS ---- */ 
+
+.section-restaurants{
+    display:flex;
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+.menu{
+    width:100%;
+    &__nouveau{
+    right:6%;
+    }
+    &__lien{
+        width:47%;
+    }
+}
+
+.menu__nouveau--gauche{
+    left:5%;
+    width:42px;
+}
+
+
+/* ---- FOOTER ---- */ 
+
+
+.footer{
+    text-align:center;
+}

@@ -69,12 +69,17 @@ body{
     &__bouton{
         text-decoration:none;
         color:white;
-        background-color:$orange;
+        background-image: linear-gradient(to top, rgba(181, 57, 146, 0.959), rgba(240, 110, 205, 0.867));
         font-size:11px;
         font-weight:500;
         border-radius:20px;
         padding: 11px 18px;
         box-shadow: 0 2px 5.5px 0 rgba(179, 179, 179, 0.813);
+        &:hover{
+            background-image: linear-gradient(to top, rgba(181, 88, 154, 0.959), rgba(240, 110, 205, 0.867));
+            box-shadow: 0 5px 8px 0 rgba(179, 179, 179, 0.813);
+            transition: 0.4s;
+        }
 
     }
 }
@@ -112,7 +117,7 @@ body{
         font-size:9px;
         font-weight:400;
         color:white;
-        padding:3px 6px;
+        padding:4px 7px;
         border-radius:30px;
         background-color: $marron;
         margin-left: -9px;
@@ -201,6 +206,7 @@ body{
 }
 
 
+
 /* ----------- FOOTER ------------- */ 
 
 .footer{
@@ -238,4 +244,79 @@ body{
     color:white;
     margin-right:6px;
     font-size:12px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- LOADER SCSS -------- */ 
+
+.loader{
+    display:grid;
+    place-items: center;
+    position:fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: rgb(242, 242, 242);
+    height:100vh;
+    animation: disparition 0.1s forwards 2.8s;  
+    transform-origin: center 100px;
+    &::after{
+        content:"";
+        height:85px;
+        width:85px;
+        border-top: 6px solid rgb(59, 59, 59);
+        border-radius:50%;
+        animation: tournicoti 0.8s infinite ease-in-out;
+    }
+    }
+ 
+.loader>i{
+    font-size:28px;
+    animation: tournicoti-burger 1s 1.3s ease-in-out;
+    padding:25px; 
+    border-radius: 50%;
+    background-color:rgb(32, 64, 241);
+    color:rgb(255, 255, 255);
+    position:absolute;
+}
+
+
+
+
+
+@keyframes disparition {
+    0% {
+        transform:scale(1); 
+    }
+    100% {
+        transform:scale(0)
+    }
+}
+
+@keyframes tournicoti {
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes tournicoti-burger {
+    to {
+        transform:rotate(-360deg);
+    }
 }
