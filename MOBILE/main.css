@@ -134,5 +134,56 @@ body {
   background-color: rgba(231, 231, 231, 0.355);
 }
 .article-restaurants__titre {
-  font-size: 13px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* --------- vignettes menu --------- */
+.menu {
+  background-color: white;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5.5px 0 rgba(207, 207, 207, 0.813);
+  height: 180px;
+}
+.menu__lien {
+  text-decoration: none;
+}
+.menu__image {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.menu__nouveau {
+  position: absolute;
+  right: 22px;
+  margin-top: 10px;
+  padding: 4px 8px;
+  font-size: 9.5px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: rgb(19, 153, 19);
+}
+.menu__texte {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.menu__texte__titre {
+  margin: 5px 0 0 8px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.menu__texte__p {
+  margin: 4px 0 0 8px;
+  font-size: 11px;
+}
+
+#menu__texte__coeur {
+  margin: 10px 15px 0 0;
+  font-size: 17px;
 }/*# sourceMappingURL=main.css.map */

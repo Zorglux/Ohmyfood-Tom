@@ -87,8 +87,7 @@ body{
     box-sizing: border-box;
     margin: 40px 15px;
     &__titre{
-        font-size:17px;
-        font-weight:700;
+        @include titres-H2;
         margin-bottom:25px;
     }
 }
@@ -146,6 +145,57 @@ body{
     padding: 25px 15px;
     background-color: rgba(231, 231, 231, 0.355);
     &__titre{
-        font-size:13px;
+        @include titres-H2;
+        margin-bottom:20px;
     }
+}
+
+
+/* --------- vignettes menu --------- */ 
+
+.menu{
+    background-color: white;
+    margin:0;
+    border-radius:10px;
+    box-shadow: 0 2px 5.5px 0 rgba(207, 207, 207, 0.813);
+    height:180px;
+    &__lien{
+        text-decoration: none;
+    }
+    &__image{
+        height:70%;
+        width:100%;
+        object-fit: cover;
+        border-radius:10px 10px 0 0 ;
+    }
+    &__nouveau{
+        position:absolute;
+         right:22px;
+         margin-top:10px;
+         padding:4px 8px;
+         font-size:9.5px;
+         font-weight:600;
+         border-radius:3px;
+         background-color: $vert;
+         color:rgb(19, 153, 19);
+    }
+    &__texte{
+        display:flex;
+        justify-content: space-between;
+        color:black;
+        &__titre{
+            margin:5px 0 0 8px ;
+            font-size:12px;
+            font-weight:900;
+        }
+        &__p{
+            margin:4px 0 0 8px;
+            font-size:11px;
+        }
+    }
+}
+
+#menu__texte__coeur{
+    margin:10px 15px 0 0;
+    font-size:17px;
 }

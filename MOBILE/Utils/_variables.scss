@@ -6,3 +6,9 @@ $vert: #99E2D0;
 $police-titre: Shrikhand;
 $police-base: Roboto;
 
+
+
+@mixin titres-H2{
+    font-size:17px;
+    font-weight:700;
+}
