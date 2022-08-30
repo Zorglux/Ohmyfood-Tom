@@ -142,7 +142,7 @@ body{
 /* ----------- ARTICLE RESTAURANTS ------------- */ 
 
 .article-restaurants{
-    padding: 25px 15px;
+    padding: 20px 15px 40px 15px;
     background-color: rgba(231, 231, 231, 0.355);
     &__titre{
         @include titres-H2;
@@ -155,7 +155,7 @@ body{
 
 .menu{
     background-color: white;
-    margin:0;
+    margin:0 0 10px 0;
     border-radius:10px;
     box-shadow: 0 2px 5.5px 0 rgba(207, 207, 207, 0.813);
     height:180px;
@@ -195,7 +195,47 @@ body{
     }
 }
 
-#menu__texte__coeur{
+#menu__texte__coeur, #menu__texte__coeur-2, #menu__texte__coeur-3, #menu__texte__coeur-4{
     margin:10px 15px 0 0;
     font-size:17px;
+}
+
+
+/* ----------- FOOTER ------------- */ 
+
+.footer{
+    background-color:rgb(56, 56, 56);
+    padding:25px;
+    &__titre{
+        color:white;
+        font-family: $police-titre;
+        font-size:17px;
+        font-weight:400;
+        margin:0;
+    }
+    &__ul{
+        list-style-type: none;
+        padding:0;
+    }
+    &__ul>li{
+        margin: 3px 0;
+    }
+    &__a{
+        color:white;
+        text-decoration: none;
+        font-size:13px;
+    }
+}
+
+
+
+#footer__logo{
+    color:white;
+    margin-right:10px;
+    font-size:13px;
+}
+#footer__logo-2{
+    color:white;
+    margin-right:6px;
+    font-size:12px
 }
