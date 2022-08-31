@@ -59,11 +59,67 @@
 }
 
 .menu__nouveau--gauche {
-  left: 5%;
-  width: 42px;
+  left: 3%;
+  width: 40px;
 }
 
 /* ---- FOOTER ---- */
 .footer {
   text-align: center;
+}
+
+/* version ordinateur  */
+@media screen and (min-width: 998px) {
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .header__titre {
+    font-size: 32px;
+  }
+  .sous-header__lien {
+    font-size: 21px;
+    padding-top: 22px;
+  }
+  #sous-header__logo {
+    font-size: 19px;
+  }
+  /* TEXTE- sous -HEADER */
+  .texte-header__titre {
+    font-size: 26px;
+  }
+  .texte-header__paragraphe {
+    font-size: 19px;
+  }
+  .texte-header__bouton {
+    font-size: 18px;
+  }
+  /* SECTION VIGNETTES --- fonctionnement */
+  .vignette {
+    padding: 10px 40px;
+  }
+  .vignette__chiffre {
+    margin-left: -50px;
+    font-size: 13px;
+  }
+  .vignette__titre {
+    font-size: 16px;
+  }
+  #vignette__logo, #vignette__logo-2, #vignette__logo-3 {
+    font-size: 17px;
+  }
+  /* PARTIE MENUE. */
+  .menu__nouveau {
+    position: relative;
+    bottom: 120px;
+    left: 400px;
+  }
+  .menu__texte__titre--ordinateur, .menu__texte__p--ordinateur {
+    position: relative;
+    bottom: 20px;
+  }
+  #menu__texte__coeur, #menu__texte__coeur-2 {
+    position: relative;
+    bottom: 20px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
