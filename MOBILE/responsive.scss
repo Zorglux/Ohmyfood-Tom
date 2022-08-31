@@ -51,21 +51,18 @@
     flex-wrap: wrap;
     gap:40px;
 }
-
 .menu{
     width:100%;
+    position:relative; 
+    margin-bottom:0;
     &__nouveau{
-    right:6%;
+     position:absolute; bottom:150px; right:15px;
     }
     &__lien{
         width:47%;
     }
 }
 
-.menu__nouveau--gauche{
-    left:3%;
-    width:40px;
-}
 
 
 /* ---- FOOTER ---- */ 
@@ -146,16 +143,5 @@ font-size:19px;
 
     /* PARTIE MENUE. */ 
 
-.menu__nouveau{
-    position:relative; bottom:120px; left:400px;
-}
-
-.menu__texte__titre--ordinateur, .menu__texte__p--ordinateur{
-    position:relative; bottom:20px;
-}
-
-#menu__texte__coeur, #menu__texte__coeur-2{
-    position:relative; bottom: 20px;
-}
 
 }
