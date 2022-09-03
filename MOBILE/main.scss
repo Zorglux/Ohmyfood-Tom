@@ -312,14 +312,70 @@ body{
     }
     &__titre{
         @include logo;
-        margin-left:10px;
+        margin: 15px 0 0 0;
     }
 }
 
+/* ------------------- LISTE DANS L'ARTICLE --------------- */ 
 
-
-
-
+.menu-liste{
+    list-style-type: none;
+    padding:0;
+    &__titre{
+        font-weight:300;
+        text-transform: uppercase;
+        font-size:12px;
+        &::after{
+            display:flex;
+            content:"";
+            border: solid #99e2d0 1.2px;
+            background-color: #99e2d0;
+            width:33px;
+            margin-top:3px;
+        }   
+    }
+    &__lien{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    }
+    
+    &__ul{
+    padding:0;
+    list-style-type: none;
+    }
+    &__li{
+        padding:0; 
+        box-shadow: 2px 5px 13px 5px #000000;
+        border-radius:15px;
+    }
+    &__h2{
+        font-size:14px;
+        margin:0;
+        
+    }
+    &__p{
+            font-weight:300;
+            font-size:12px;
+            margin: 6px 0 0 0;
+    }
+    &__div{
+        margin:10px 10px;
+    }
+    &__animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 60px;
+        border-radius: 0 15px 15px 0;
+        color: white;
+        font-size: 18px;
+        background-color: #99e2d0;
+    }
+}
 
 
 

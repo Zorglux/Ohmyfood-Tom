@@ -293,7 +293,65 @@ body {
   font-family: Shrikhand;
   font-size: 22px;
   font-weight: 500;
-  margin-left: 10px;
+  margin: 15px 0 0 0;
+}
+
+/* ------------------- LISTE DANS L'ARTICLE --------------- */
+.menu-liste {
+  list-style-type: none;
+  padding: 0;
+}
+.menu-liste__titre {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.menu-liste__titre::after {
+  display: flex;
+  content: "";
+  border: solid #99e2d0 1.2px;
+  background-color: #99e2d0;
+  width: 33px;
+  margin-top: 3px;
+}
+.menu-liste__lien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.menu-liste__ul {
+  padding: 0;
+  list-style-type: none;
+}
+.menu-liste__li {
+  padding: 0;
+  box-shadow: 2px 5px 13px 5px #000000;
+  border-radius: 15px;
+}
+.menu-liste__h2 {
+  font-size: 14px;
+  margin: 0;
+}
+.menu-liste__p {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 6px 0 0 0;
+}
+.menu-liste__div {
+  margin: 10px 10px;
+}
+.menu-liste__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 60px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-size: 18px;
+  background-color: #99e2d0;
 }
 
 /* ----- LOADER SCSS -------- */
