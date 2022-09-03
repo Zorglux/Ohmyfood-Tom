@@ -14,10 +14,10 @@ body {
 }
 
 .header__titre {
-  text-align: center;
   font-family: Shrikhand;
   font-size: 22px;
   font-weight: 500;
+  text-align: center;
   margin: 12px 0 5px 0;
 }
 
@@ -247,6 +247,53 @@ body {
   color: white;
   margin-right: 6px;
   font-size: 12px;
+}
+
+/* ---------- PAGE MENU DELICES ----------------  */
+/* ---- HEADER ------- */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-header__lien {
+  position: absolute;
+  left: 7%;
+  top: 13px;
+  color: black;
+}
+.menu-header__logo {
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 7px 0 3px 0;
+}
+
+/* -------- IMAGE SOUS LE HEADER ------- */
+.menu-sous-header__image {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ---------- ARTICLE ENTREE PLAT DESSERT ------ */
+.menu-article {
+  position: relative;
+  margin-top: -35px;
+  padding: 1px 12px 0 12px;
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+}
+.menu-article__div {
+  display: flex;
+  align-items: center;
+}
+.menu-article__titre {
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 10px;
 }
 
 /* ----- LOADER SCSS -------- */

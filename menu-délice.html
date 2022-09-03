@@ -4,32 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <title>Projet 3</title>
-        <link rel="stylesheet" href="../MOBILE/main.css">
+        <link rel="stylesheet" href="./MOBILE/main.css">
         <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 1100px)" href="../TABLETTE/main.css" />
         <link rel="stylesheet" media="screen and (min-width: 1100px)" href="../ORDINATEUR/main.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <! --  CONTRAINTES : SASS & GITHUB. 
-               --  MOBILE FIRST & TABLETTE & PC
-               --VALIDATION CHROME&FIREFOX
-        -- >
+       
     </head>
     
     <body>
 
-        <header>
-            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-            <h1>ohmyfood</h1>
+        <header class="menu-header">
+            <a href="#" class="menu-header__lien"><i class="fa-solid fa-arrow-left"></i></a>
+            <h1 class="menu-header__logo">ohmyfood</h1>
         </header>
 
         <main>
             <section>
-                <img src="#" alt="#">
+                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image Plat restaurant le délice des sens" class="menu-sous-header__image">
             </section>
 
-            <article>
-                <div>
-                    <h1>Le délice des sens</h1>
-                    <i class="fa-regular fa-heart"></i>
+            <article class="menu-article">
+                <div class="menu-article__div">
+                    <h1 class="menu-article__titre">Le délice des sens</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart menu__coeur" viewBox="0 0 16 16"> <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/> </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill menu__coeur menu__coeur--transition" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/> </svg>                                
                 </div>
                 
             <section>

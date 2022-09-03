@@ -16,10 +16,8 @@ body{
     border-bottom: rgb(193, 193, 193) solid 0.3px;
 }
     .header__titre{
+        @include logo;
         text-align:center;
-        font-family: $police-titre;
-        font-size:22px;
-        font-weight: 500;
         margin: 12px 0 5px 0;
     }
 
@@ -268,6 +266,71 @@ body{
     margin-right:6px;
     font-size:12px
 }
+
+
+
+
+/* ---------- PAGE MENU DELICES ----------------  */ 
+
+
+/* ---- HEADER ------- */ 
+
+.menu-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &__lien{
+        position:absolute; left:7%; top:13px;
+        color:black;
+    }
+    &__logo{
+        @include logo;
+        margin: 7px 0 3px 0;
+    }
+}
+
+/* -------- IMAGE SOUS LE HEADER ------- */ 
+
+
+.menu-sous-header__image{
+    height: 200px;
+    width:100%;
+    object-fit: cover;
+}
+
+/* ---------- ARTICLE ENTREE PLAT DESSERT ------ */ 
+
+.menu-article{
+    position:relative;
+    margin-top:-35px;
+    padding: 1px 12px 0 12px;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    &__div{
+        display:flex;
+        align-items: center;
+    }
+    &__titre{
+        @include logo;
+        margin-left:10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

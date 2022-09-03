@@ -12,3 +12,9 @@ $police-base: Roboto;
     font-size:17px;
     font-weight:700;
 }
+
+@mixin logo{
+    font-family: $police-titre;
+        font-size:22px;
+        font-weight: 500;
+}
