@@ -1,0 +1,30 @@
+
+.loader{
+    display:grid;
+    place-items: center;
+    position:fixed;
+    inset: 0;
+    z-index: 5;
+    background-color: rgb(242, 242, 242);
+    height:100vh;
+    animation: disparition 0.1s forwards 2.8s;  
+    transform-origin: center 100px;
+    &::after{
+        content:"";
+        height:85px;
+        width:85px;
+        border-top: 6px solid rgb(59, 59, 59);
+        border-radius:50%;
+        animation: tournicoti 0.8s infinite ease-in-out;
+    }
+    }
+ 
+.loader>i{
+    font-size:28px;
+    animation: tournicoti-burger 1s 1.3s ease-in-out;
+    padding:25px; 
+    border-radius: 50%;
+    background-color:rgb(32, 64, 241);
+    color:rgb(255, 255, 255);
+    position:absolute;
+}

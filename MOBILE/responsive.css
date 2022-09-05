@@ -10,7 +10,7 @@
   padding-top: 20px;
 }
 
-#sous-header__logo {
+.sous-header__logo {
   font-size: 17px;
 }
 
@@ -80,7 +80,7 @@
     font-size: 21px;
     padding-top: 22px;
   }
-  #sous-header__logo {
+  .sous-header__logo {
     font-size: 19px;
   }
   /* TEXTE- sous -HEADER */

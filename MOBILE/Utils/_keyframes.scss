@@ -1,0 +1,59 @@
+
+// keyframe qui fait disparaitre le loader 
+
+@keyframes disparition {
+    0% {
+        transform:scale(1); 
+    }
+    100% {
+        transform:scale(0)
+    }
+}
+
+
+// keyframe du trait qui tourne 
+
+@keyframes tournicoti {
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+// Keyframe du burger qui tourne
+
+@keyframes tournicoti-burger {
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+
+
+
+// keyframe qui fais tourner le checkmarck
+
+@keyframes tourne-logo{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+// keyframe du délai sur MENU 
+
+@keyframes apparition {
+    0%{
+        transform:translateY(10%);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+

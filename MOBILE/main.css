@@ -1,5 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@-webkit-keyframes disparition {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes disparition {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes tournicoti {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes tournicoti {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes tournicoti-burger {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes tournicoti-burger {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes tourne-logo {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes tourne-logo {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes apparition {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
 }
@@ -8,11 +74,40 @@ body {
   font-family: Roboto;
 }
 
-/* ------------- HEADER -------------- */
-.header {
-  border-bottom: rgb(193, 193, 193) solid 0.3px;
+.loader {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background-color: rgb(242, 242, 242);
+  height: 100vh;
+  -webkit-animation: disparition 0.1s forwards 2.8s;
+          animation: disparition 0.1s forwards 2.8s;
+  transform-origin: center 100px;
+}
+.loader::after {
+  content: "";
+  height: 85px;
+  width: 85px;
+  border-top: 6px solid rgb(59, 59, 59);
+  border-radius: 50%;
+  -webkit-animation: tournicoti 0.8s infinite ease-in-out;
+          animation: tournicoti 0.8s infinite ease-in-out;
 }
 
+.loader > i {
+  font-size: 28px;
+  -webkit-animation: tournicoti-burger 1s 1.3s ease-in-out;
+          animation: tournicoti-burger 1s 1.3s ease-in-out;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: rgb(32, 64, 241);
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+
+/* ------------- HEADER -------------- */
 .header__titre {
   font-family: Shrikhand;
   font-size: 22px;
@@ -36,8 +131,7 @@ body {
   padding-left: 15px;
   margin-top: 0;
 }
-
-#sous-header__logo {
+.sous-header__logo {
   font-size: 13.5px;
 }
 
@@ -55,7 +149,6 @@ body {
 }
 .texte-header__paragraphe {
   font-size: 12.5px;
-  font-weight: 400;
   color: rgb(93, 93, 93);
   margin: 9px 0 25px 0;
 }
@@ -77,7 +170,7 @@ body {
 
 /* -------- ARTICLE FONCTIONNEMENT ------- */
 .article-fonctionnement {
-  box-sizing: border-box;
+  box-sizing: border-box; /* a enlever? */
   margin: 40px 15px;
 }
 .article-fonctionnement__titre {
@@ -88,7 +181,7 @@ body {
 
 /* -- vignettes -- */
 .section-vignette {
-  box-sizing: border-box;
+  box-sizing: border-box; /* a enlever ? */
   margin-left: 7px;
 }
 
@@ -104,7 +197,6 @@ body {
 }
 .vignette__chiffre {
   font-size: 9px;
-  font-weight: 400;
   color: white;
   padding: 4px 7px;
   border-radius: 30px;
@@ -114,20 +206,17 @@ body {
 .vignette__titre {
   font-size: 12px;
 }
-
 .vignette:hover {
   background-color: #f5edff;
 }
 
-#vignette__logo, #vignette__logo-2 {
+.vignette__logo {
   color: grey;
   margin: 0 20px;
   font-size: 14px;
 }
 
-#vignette__logo-3 {
-  color: grey;
-  margin: 0 20px;
+.vignette__logo--petit {
   font-size: 13px;
 }
 
@@ -408,108 +497,4 @@ body {
   padding: 13px 40px;
   font-size: 13px;
   border-radius: 30px;
-}
-
-/* ----- LOADER SCSS -------- */
-.loader {
-  display: grid;
-  place-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 5;
-  background-color: rgb(242, 242, 242);
-  height: 100vh;
-  -webkit-animation: disparition 0.1s forwards 2.8s;
-          animation: disparition 0.1s forwards 2.8s;
-  transform-origin: center 100px;
-}
-.loader::after {
-  content: "";
-  height: 85px;
-  width: 85px;
-  border-top: 6px solid rgb(59, 59, 59);
-  border-radius: 50%;
-  -webkit-animation: tournicoti 0.8s infinite ease-in-out;
-          animation: tournicoti 0.8s infinite ease-in-out;
-}
-
-.loader > i {
-  font-size: 28px;
-  -webkit-animation: tournicoti-burger 1s 1.3s ease-in-out;
-          animation: tournicoti-burger 1s 1.3s ease-in-out;
-  padding: 25px;
-  border-radius: 50%;
-  background-color: rgb(32, 64, 241);
-  color: rgb(255, 255, 255);
-  position: absolute;
-}
-
-@-webkit-keyframes disparition {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes disparition {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@-webkit-keyframes tournicoti {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes tournicoti {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes tournicoti-burger {
-  to {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes tournicoti-burger {
-  to {
-    transform: rotate(-360deg);
-  }
-}
-/* ------ TRANSITION HOVER SUR MENU ------ */
-@-webkit-keyframes tourne-logo {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes tourne-logo {
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* --------- ANIMATION APPARITION MENU --------- */
-@-webkit-keyframes apparition {
-  0% {
-    transform: translateY(10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes apparition {
-  0% {
-    transform: translateY(10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }/*# sourceMappingURL=main.css.map */
