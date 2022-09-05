@@ -280,7 +280,7 @@ body{
     align-items: center;
     justify-content: center;
     &__lien{
-        position:absolute; left:7%; top:13px;
+        position:relative; right:50px; top:1px;
         color:black;
     }
     &__logo{
@@ -321,6 +321,23 @@ body{
 .menu-liste{
     list-style-type: none;
     padding:0;
+    animation: apparition 0.7s both;
+
+
+
+
+
+    @for $i from 1 through 3{
+        &:nth-child(#{$i}){
+            animation-delay: 300ms * $i;
+        }
+    }
+
+
+
+
+
+
     &__titre{
         font-weight:300;
         text-transform: uppercase;
@@ -351,12 +368,12 @@ body{
             animation: tourne-logo 0.5s;
         }
         &:hover .menu-liste__strong{
-            right:80px ;
+            right:65px ;
             transition:0.4s
         }
     }
     &__strong{
-        position:absolute; right:30px;
+        position:absolute; right:15px;
     }
     
     &__ul{
@@ -447,7 +464,6 @@ body{
 
 
 
-
 /* ----- LOADER SCSS -------- */ 
 
 .loader{
@@ -512,5 +528,22 @@ body{
 @keyframes tourne-logo{
     to{
         transform:rotate(360deg);
+    }
+}
+
+
+
+
+/* --------- ANIMATION APPARITION MENU --------- */ 
+
+@keyframes apparition {
+    0%{
+        transform:translateY(10%);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity:1;
     }
 }

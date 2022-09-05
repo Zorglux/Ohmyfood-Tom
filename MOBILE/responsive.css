@@ -109,8 +109,46 @@
   }
 }
 /*------ RESPONSIVE DE PAGE MENU DELICES ----- */
+.zz {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-liste__li {
+  width: 230px;
+}
+
+.menu-liste__lien {
+  position: relative;
+}
+.menu-liste__lien:hover .menu-liste__strong {
+  right: 60px;
+}
+.menu-liste__lien:hover .menu-liste__animation {
+  margin-left: 0;
+}
+.menu-liste__lien:hover .menu-liste__div {
+  width: 55%;
+}
+
+.menu-liste__strong {
+  position: absolute;
+  right: 10px;
+}
+
+.menu-bouton__div {
+  margin: 15px 0 45px 0;
+}
+
 .texte-header__bouton--menu {
   padding: 13px 40px;
   font-size: 13px;
   border-radius: 30px;
+}
+
+/* ---------- VERSION PC PAGE MENU --------- */
+@media screen and (min-width: 998px) {
+  .menu-liste__li {
+    width: 300px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
