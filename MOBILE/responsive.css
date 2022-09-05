@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* TABLETTE */
 /* ----HEADER---- */
 .header__titre {
@@ -115,7 +116,7 @@
 }
 
 .menu-liste__li {
-  width: 230px;
+  width: 235px;
 }
 
 .menu-liste__lien {
@@ -150,5 +151,18 @@
 @media screen and (min-width: 998px) {
   .menu-liste__li {
     width: 300px;
+  }
+}
+/* détails finaux problèmes spécifiques */
+/* ecriture d'une'vignettes menu trop large sur tablette 
+    -------- note enchantée+ à la francaise+  -------
+*/
+.menu-liste__p--detail {
+  width: 90%;
+}
+
+@media screen and (min-width: 998px) {
+  .menu-liste__p--detail {
+    width: 100%;
   }
 }/*# sourceMappingURL=responsive.css.map */

@@ -547,3 +547,25 @@ body{
         opacity:1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* détails finaux problèmes spécifiques */ 
+
+/* ecriture de vignettes menu trop large sur mobile */ 
+@media screen and (max-width:305px){
+
+.menu-liste__p--detail{
+    width:90%;
+}
+}
