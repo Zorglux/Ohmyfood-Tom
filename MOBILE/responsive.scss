@@ -65,6 +65,7 @@
 
 
 
+
 /* ---- FOOTER ---- */ 
 
 
@@ -137,9 +138,21 @@ font-size:19px;
     }
 
 
-
-
-    /* PARTIE MENUE. */ 
-
-
 }
+
+
+    /*------ RESPONSIVE DE PAGE MENU DELICES ----- */ 
+
+
+
+
+
+
+
+
+
+    .texte-header__bouton--menu{
+        padding:13px 40px;
+        font-size:13px;
+        border-radius:30px;
+    }

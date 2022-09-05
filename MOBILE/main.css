@@ -325,10 +325,19 @@ body {
   width: 50px;
   visibility: visible;
   transition: 0.4s;
+  margin-left: 60px;
 }
 .menu-liste__lien:hover .a {
   -webkit-animation: tourne-logo 0.5s;
           animation: tourne-logo 0.5s;
+}
+.menu-liste__lien:hover .menu-liste__strong {
+  right: 80px;
+  transition: 0.4s;
+}
+.menu-liste__strong {
+  position: absolute;
+  right: 30px;
 }
 .menu-liste__ul {
   padding: 0;
@@ -338,19 +347,29 @@ body {
   padding: 0;
   box-shadow: 0 0 12px 0 #dddddd;
   border-radius: 15px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 .menu-liste__h2 {
   font-size: 14px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-liste__p {
   font-weight: 300;
   font-size: 12px;
   margin: 6px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-liste__div {
   margin: 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-liste__animation {
   display: flex;
@@ -364,9 +383,18 @@ body {
   font-size: 18px;
   background-color: #99e2d0;
 }
-.menu-liste__strong {
-  position: relative;
-  left: 70px;
+
+/* ----- bouton commander ----------- */
+.menu-bouton__div {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.texte-header__bouton--menu {
+  padding: 13px 40px;
+  font-size: 13px;
+  border-radius: 30px;
 }
 
 /* ----- LOADER SCSS -------- */

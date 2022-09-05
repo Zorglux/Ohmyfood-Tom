@@ -332,7 +332,8 @@ body{
             background-color: #99e2d0;
             width:33px;
             margin-top:3px;
-        }   
+        }  
+
     }
     &__lien{
     display:flex;
@@ -340,38 +341,57 @@ body{
     align-items: center;
     text-decoration: none;
     color:black;
-    &:hover .menu-liste__animation{
-     width:50px;
-     visibility: visible;
-     transition:0.4s;
+        &:hover .menu-liste__animation{
+            width:50px;
+            visibility: visible;
+            transition:0.4s;
+            margin-left:60px;
+            }
+        &:hover .a{
+            animation: tourne-logo 0.5s;
+        }
+        &:hover .menu-liste__strong{
+            right:80px ;
+            transition:0.4s
+        }
     }
-    &:hover .a{
-        animation: tourne-logo 0.5s;
-    }
+    &__strong{
+        position:absolute; right:30px;
     }
     
     &__ul{
     padding:0;
     list-style-type: none;
     }
+
     &__li{
         padding:0; 
         box-shadow: 0 0 12px 0 #dddddd;
         border-radius:15px;
+        margin-bottom: 15px;
         overflow: hidden;
     }
     &__h2{
         font-size:14px;
         margin:0;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
         
     }
     &__p{
             font-weight:300;
             font-size:12px;
             margin: 6px 0 0 0;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
     }
     &__div{
         margin:10px 10px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
     }
     &__animation{
         display: flex;
@@ -385,12 +405,22 @@ body{
         font-size: 18px;
         background-color: #99e2d0;
     }
-    &__strong{
-        position:relative;  left:70px;
-    }
 }
 
+/* ----- bouton commander ----------- */ 
 
+
+.menu-bouton__div{
+    display:flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.texte-header__bouton--menu{
+    padding:13px 40px;
+    font-size:13px;
+    border-radius:30px;
+}
 
 
 
