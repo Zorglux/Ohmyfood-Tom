@@ -270,6 +270,32 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------- PAGE MENU DELICES ----------------  */ 
 
 
@@ -322,22 +348,11 @@ body{
     list-style-type: none;
     padding:0;
     animation: apparition 0.7s both;
-
-
-
-
-
     @for $i from 1 through 3{
         &:nth-child(#{$i}){
             animation-delay: 300ms * $i;
         }
     }
-
-
-
-
-
-
     &__titre{
         font-weight:300;
         text-transform: uppercase;
@@ -362,7 +377,8 @@ body{
             width:50px;
             visibility: visible;
             transition:0.4s;
-            margin-left:60px;
+            margin-left:0;
+            flex-shrink: 0;
             }
         &:hover .a{
             animation: tourne-logo 0.5s;
@@ -378,11 +394,9 @@ body{
     
     &__ul{
     padding:0;
-    list-style-type: none;
     }
 
     &__li{
-        padding:0; 
         box-shadow: 0 0 12px 0 #dddddd;
         border-radius:15px;
         margin-bottom: 15px;
@@ -405,7 +419,7 @@ body{
             text-overflow: ellipsis;
     }
     &__div{
-        margin:10px 10px;
+        margin:10px 40px 10px 10px;
         white-space:nowrap;
         overflow:hidden;
         text-overflow: ellipsis;
@@ -548,24 +562,3 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* détails finaux problèmes spécifiques */ 
-
-/* ecriture de vignettes menu trop large sur mobile */ 
-@media screen and (max-width:305px){
-
-.menu-liste__p--detail{
-    width:90%;
-}
-}

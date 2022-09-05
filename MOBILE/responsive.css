@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* TABLETTE */
 /* ----HEADER---- */
 .header__titre {
@@ -115,26 +114,8 @@
   justify-content: space-around;
 }
 
-.menu-liste__li {
-  width: 235px;
-}
-
-.menu-liste__lien {
-  position: relative;
-}
-.menu-liste__lien:hover .menu-liste__strong {
-  right: 60px;
-}
-.menu-liste__lien:hover .menu-liste__animation {
-  margin-left: 0;
-}
-.menu-liste__lien:hover .menu-liste__div {
-  width: 55%;
-}
-
-.menu-liste__strong {
-  position: absolute;
-  right: 10px;
+.menu-liste {
+  width: 30%;
 }
 
 .menu-bouton__div {
@@ -147,22 +128,4 @@
   border-radius: 30px;
 }
 
-/* ---------- VERSION PC PAGE MENU --------- */
-@media screen and (min-width: 998px) {
-  .menu-liste__li {
-    width: 300px;
-  }
-}
-/* détails finaux problèmes spécifiques */
-/* ecriture d'une'vignettes menu trop large sur tablette 
-    -------- note enchantée+ à la francaise+  -------
-*/
-.menu-liste__p--detail {
-  width: 90%;
-}
-
-@media screen and (min-width: 998px) {
-  .menu-liste__p--detail {
-    width: 100%;
-  }
-}/*# sourceMappingURL=responsive.css.map */
+/* ---------- VERSION PC PAGE MENU --------- *//*# sourceMappingURL=responsive.css.map */
