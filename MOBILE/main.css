@@ -403,7 +403,7 @@ body {
   content: "";
   border: solid #99e2d0 1.2px;
   background-color: #99e2d0;
-  width: 33px;
+  width: 28px;
   margin-top: 3px;
 }
 .menu-liste__lien {
@@ -436,7 +436,7 @@ body {
   padding: 0;
 }
 .menu-liste__li {
-  box-shadow: 0 0 12px 0 #dddddd;
+  box-shadow: 0 0 12px 0 #c3c3c3;
   border-radius: 15px;
   margin-bottom: 15px;
   overflow: hidden;
