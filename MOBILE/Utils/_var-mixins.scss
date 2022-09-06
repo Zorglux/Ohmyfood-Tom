@@ -18,3 +18,10 @@ $police-base: Roboto;
         font-size:22px;
         font-weight: 500;
 }
+
+
+@mixin trois-petits-points{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

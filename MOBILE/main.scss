@@ -117,24 +117,18 @@
     &__h2{
         font-size:14px;
         margin:0;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
+        @include trois-petits-points;
         
     }
     &__p{
             font-weight:300;
             font-size:12px;
             margin: 6px 0 0 0;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow: ellipsis;
+            @include trois-petits-points;
     }
     &__div{
         margin:10px 40px 10px 10px;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
+        @include trois-petits-points;
     }
     &__animation{
         display: flex;
@@ -161,8 +155,6 @@
 
 .texte-header__bouton--menu{
     padding:13px 40px;
-    font-size:13px;
-    border-radius:30px;
-}
+    font-size:13px;}
 
 

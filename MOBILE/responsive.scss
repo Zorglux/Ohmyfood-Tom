@@ -29,7 +29,7 @@
     padding: 15px 22px;
 }
 
-/* SECTION VIGNETTES --- fonctionnement */ 
+/* ARTICLE VIGNETTES --- fonctionnement */ 
 
 .section-vignette{
     display:flex;
@@ -52,11 +52,11 @@
     gap:40px;
 }
 .menu{
-    width:100%;
+// a enlever :     width:100%;
     position:relative; 
     margin-bottom:0;
     &__nouveau{
-     position:absolute; bottom:150px; right:15px;
+         right:15px;
     }
     &__lien{
         width:47%;
@@ -75,9 +75,6 @@
 
 
 
-
-
-
 /* version ordinateur  */ 
 
 
@@ -91,7 +88,7 @@ body{
 
     
 .header__titre{
-        font-size:32px;
+        font-size:35px;
 }
  
 .sous-header{
@@ -127,26 +124,19 @@ font-size:19px;
 .vignette__chiffre{
         margin-left: -50px;
         font-size:13px;
+        padding: 6px 10px;
     }
 
 .vignette__titre{
         font-size:16px;
     }
 
-    #vignette__logo, #vignette__logo-2, #vignette__logo-3{
+.vignette__logo{
         font-size:17px;
     }
 
 
 }
-
-
-
-
-
-
-
-
 
 
 
