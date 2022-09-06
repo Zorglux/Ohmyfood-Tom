@@ -131,9 +131,6 @@ body {
   padding-left: 15px;
   margin-top: 0;
 }
-.sous-header__logo {
-  font-size: 13.5px;
-}
 
 /* -------- TEXTE SOUS HEADER --------    */
 .texte-header {
@@ -294,7 +291,6 @@ body {
 }
 .menu__coeur--transition:hover {
   opacity: 1;
-  color: rgb(234, 18, 54);
   transform: scale(1.05);
   transition: 0.5s;
 }
