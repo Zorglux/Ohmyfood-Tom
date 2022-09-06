@@ -1,13 +1,12 @@
 /* TABLETTE */ 
 
 /* ----HEADER---- */ 
-
 .header__titre{
     font-size:29px;
 }
 
-/* SOUS HEADER */ 
 
+/* SOUS HEADER */ 
 .sous-header{
     font-size:18px;
     padding-top:20px;
@@ -16,8 +15,8 @@
     font-size:17px;
 }
 
-/* TEXTE SOUS HEADER */ 
 
+/* TEXTE SOUS HEADER */ 
 .texte-header__titre{
     font-size:23px;
 }
@@ -29,8 +28,8 @@
     padding: 15px 22px;
 }
 
-/* ARTICLE VIGNETTES --- fonctionnement */ 
 
+/* ARTICLE VIGNETTES --- fonctionnement */ 
 .section-vignette{
     display:flex;
     justify-content: space-evenly;
@@ -45,7 +44,6 @@
 
 
 /* ---- SECTION RESTAURANTS ---- */ 
-
 .section-restaurants{
     display:flex;
     flex-wrap: wrap;
@@ -64,22 +62,24 @@
 }
 
 
-
-
 /* ---- FOOTER ---- */ 
-
-
 .footer{
     text-align:center;
 }
 
+.footer__titre{
+    font-size:19px;
+}
+.footer__a{
+    font-size:14px;
+}
+.footer__logo-2{
+    font-size:13px;
+}
 
 
 /* version ordinateur  */ 
-
-
 @media screen and (min-width:998px){
-
 
 body{
     margin: 0 auto;
@@ -90,21 +90,16 @@ body{
 .header__titre{
         font-size:35px;
 }
- 
 .sous-header{
     font-size:21px;
     padding-top:22px;
 }
-
-
 .sous-header__logo{
 font-size:19px;
 }
 
+
 /* TEXTE- sous -HEADER */ 
-
-
-
 .texte-header__titre{
     font-size:26px;
 }
@@ -115,8 +110,8 @@ font-size:19px;
     font-size:18px;
 }
 
-/* SECTION VIGNETTES --- fonctionnement */
 
+/* SECTION VIGNETTES --- fonctionnement */
 .vignette{
     padding:10px 40px;
 }
@@ -139,13 +134,8 @@ font-size:19px;
 }
 
 
-
-
-
-
-    /*------ RESPONSIVE DE PAGE MENU DELICES ----- */ 
-
-.zz{
+/*------ RESPONSIVE DE PAGE MENU DELICES ----- */ 
+.section-page-menu{
     display:flex;
     justify-content: space-around;
 }
@@ -154,20 +144,13 @@ font-size:19px;
     width:30%;
 }
 
-
-
 .menu-bouton__div{
     padding: 15px 0 45px 0;
 }
-
 
 .texte-header__bouton--menu{
     padding:13px 40px;
     font-size:13px;
     border-radius:30px;
 }
-
-
-
-/* ---------- VERSION PC PAGE MENU --------- */ 
 

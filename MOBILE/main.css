@@ -303,7 +303,7 @@ body {
 .footer__titre {
   color: white;
   font-family: Shrikhand;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 400;
   margin: 0;
 }
@@ -311,22 +311,20 @@ body {
   list-style-type: none;
   padding: 0;
 }
-.footer__ul > li {
-  margin: 3px 0;
-}
 .footer__a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .footer__logo {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .footer__logo-2 {
-  margin-right: 6px;
-  font-size: 12px;
+  margin-right: 4px;
+  font-size: 7px;
 }
 
 /* ---------- PAGE MENU DELICES ----------------  */

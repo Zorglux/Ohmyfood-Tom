@@ -64,6 +64,18 @@
   text-align: center;
 }
 
+.footer__titre {
+  font-size: 19px;
+}
+
+.footer__a {
+  font-size: 14px;
+}
+
+.footer__logo-2 {
+  font-size: 13px;
+}
+
 /* version ordinateur  */
 @media screen and (min-width: 998px) {
   body {
@@ -107,7 +119,7 @@
   }
 }
 /*------ RESPONSIVE DE PAGE MENU DELICES ----- */
-.zz {
+.section-page-menu {
   display: flex;
   justify-content: space-around;
 }
@@ -124,6 +136,4 @@
   padding: 13px 40px;
   font-size: 13px;
   border-radius: 30px;
-}
-
-/* ---------- VERSION PC PAGE MENU --------- *//*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */

@@ -12,7 +12,6 @@
 
 
 /* ---- HEADER ------- */ 
-
 .menu-header{
     display:flex;
     align-items: center;
@@ -27,17 +26,16 @@
     }
 }
 
+
 /* -------- IMAGE SOUS LE HEADER ------- */ 
-
-
 .menu-sous-header__image{
     height: 200px;
     width:100%;
     object-fit: cover;
 }
 
-/* ---------- ARTICLE ENTREE PLAT DESSERT ------ */ 
 
+/* ---------- ARTICLE ENTREE PLAT DESSERT ------ */ 
 .menu-article{
     position:relative;
     margin-top:-35px;
@@ -54,8 +52,8 @@
     }
 }
 
-/* ------------------- LISTE DANS L'ARTICLE --------------- */ 
 
+/* ------------------- LISTE DANS L'ARTICLE --------------- */ 
 .menu-liste{
     list-style-type: none;
     padding:0;
@@ -103,11 +101,9 @@
     &__strong{
         position:absolute; right:15px;
     }
-    
     &__ul{
     padding:0;
     }
-
     &__li{
         box-shadow: 0 0 12px 0 #dddddd;
         border-radius:15px;
@@ -144,9 +140,8 @@
     }
 }
 
+
 /* ----- bouton commander ----------- */ 
-
-
 .menu-bouton__div{
     display:flex;
     justify-content: center;
