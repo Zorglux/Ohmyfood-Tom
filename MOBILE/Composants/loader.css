@@ -4,17 +4,15 @@
   position: fixed;
   inset: 0;
   z-index: 5;
-  background-color: rgb(242, 242, 242);
-  height: 100vh;
-  -webkit-animation: disparition 0.1s forwards 2.8s;
-          animation: disparition 0.1s forwards 2.8s;
-  transform-origin: center 100px;
+  background-color: #f6f6f6;
+  -webkit-animation: disparition 0.2s forwards 2.8s;
+          animation: disparition 0.2s forwards 2.8s;
 }
 .loader::after {
   content: "";
   height: 85px;
   width: 85px;
-  border-top: 6px solid rgb(59, 59, 59);
+  border-top: 6px solid #99E2D0;
   border-radius: 50%;
   -webkit-animation: tournicoti 0.8s infinite ease-in-out;
           animation: tournicoti 0.8s infinite ease-in-out;
@@ -26,7 +24,7 @@
           animation: tournicoti-burger 1s 1.3s ease-in-out;
   padding: 25px;
   border-radius: 50%;
-  background-color: rgb(32, 64, 241);
-  color: rgb(255, 255, 255);
+  background-color: #FF79DA;
+  color: #f6f6f6;
   position: absolute;
 }/*# sourceMappingURL=loader.css.map */
