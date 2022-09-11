@@ -1,4 +1,4 @@
-/* TABLETTE */ 
+/* ---- TABLETTE ---- */ 
 
 /* ----HEADER---- */ 
 .header__titre{
@@ -50,7 +50,6 @@
     gap:40px;
 }
 .menu{
-// a enlever :     width:100%;
     position:relative; 
     margin-bottom:0;
     &__nouveau{
@@ -78,14 +77,8 @@
 }
 
 
-/* version ordinateur  */ 
+/* ---- version ordinateur ----  */ 
 @media screen and (min-width:998px){
-
-body{
-    margin: 0 auto;
-    max-width:1440px;
-}
-
     
 .header__titre{
         font-size:35px;
@@ -134,7 +127,7 @@ font-size:19px;
 }
 
 
-/*------ RESPONSIVE DE PAGE MENU DELICES ----- */ 
+/*------PAGE MENU DELICES TABLETTE----- */ 
 .section-page-menu{
     display:flex;
     justify-content: space-around;

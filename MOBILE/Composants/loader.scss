@@ -5,7 +5,7 @@
     position:fixed;
     inset: 0;
     z-index: 5;
-    background-color: #f6f6f6;
+    background-color: $fond-gris;
     animation: disparition 0.2s forwards 2.8s;  
     &::after{
         content:"";
@@ -13,13 +13,13 @@
         width:85px;
         border-top: 6px solid #99E2D0; 
         border-radius:50%;
-        animation: tournicoti 0.8s infinite ease-in-out;
+        animation: rotations 0.8s infinite ease-in-out;
     }
     }
  
 .loader>i{
     font-size:28px;
-    animation: tournicoti-burger 1s 1.3s ease-in-out;
+    animation: rotations-inverse 1s 1.3s ease-in-out;
     padding:25px; 
     border-radius: 50%;
     background-color:#FF79DA;

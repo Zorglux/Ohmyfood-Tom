@@ -26,3 +26,23 @@ $police-base: Roboto;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@mixin coeurs {
+    position:absolute;
+    right:29px;
+    margin-top:11.5px;
+    width:20px;
+    height:20px;
+}
+
+
+@mixin flex-space-between {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

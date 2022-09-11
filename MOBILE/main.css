@@ -16,34 +16,24 @@
     transform: scale(0);
   }
 }
-@-webkit-keyframes tournicoti {
+@-webkit-keyframes rotations {
   to {
     transform: rotate(360deg);
   }
 }
-@keyframes tournicoti {
+@keyframes rotations {
   to {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes tournicoti-burger {
+@-webkit-keyframes rotations-inverse {
   to {
     transform: rotate(-360deg);
   }
 }
-@keyframes tournicoti-burger {
+@keyframes rotations-inverse {
   to {
     transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes tourne-logo {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes tourne-logo {
-  to {
-    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes apparition {
@@ -67,7 +57,8 @@
   }
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 * {
@@ -90,28 +81,19 @@ body {
   width: 85px;
   border-top: 6px solid #99E2D0;
   border-radius: 50%;
-  -webkit-animation: tournicoti 0.8s infinite ease-in-out;
-          animation: tournicoti 0.8s infinite ease-in-out;
+  -webkit-animation: rotations 0.8s infinite ease-in-out;
+          animation: rotations 0.8s infinite ease-in-out;
 }
 
 .loader > i {
   font-size: 28px;
-  -webkit-animation: tournicoti-burger 1s 1.3s ease-in-out;
-          animation: tournicoti-burger 1s 1.3s ease-in-out;
+  -webkit-animation: rotations-inverse 1s 1.3s ease-in-out;
+          animation: rotations-inverse 1s 1.3s ease-in-out;
   padding: 25px;
   border-radius: 50%;
   background-color: #FF79DA;
   color: #f6f6f6;
   position: absolute;
-}
-
-/* ------------- HEADER -------------- */
-.header__titre {
-  font-family: Shrikhand;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-  margin: 12px 0 5px 0;
 }
 
 /* ---------- SOUS HEADER -------- */
@@ -165,7 +147,6 @@ body {
 
 /* -------- ARTICLE FONCTIONNEMENT ------- */
 .article-fonctionnement {
-  box-sizing: border-box; /* a enlever? */
   margin: 40px 15px;
 }
 .article-fonctionnement__titre {
@@ -176,7 +157,6 @@ body {
 
 /* -- vignettes -- */
 .section-vignette {
-  box-sizing: border-box; /* a enlever ? */
   margin-left: 7px;
 }
 
@@ -293,44 +273,12 @@ body {
   transition: 0.5s;
 }
 
-/* ----------- FOOTER ------------- */
-.footer {
-  background-color: #353535;
-  padding: 25px;
-}
-.footer__titre {
-  color: white;
-  font-family: Shrikhand;
-  font-size: 13px;
-  font-weight: 400;
-  margin: 0;
-}
-.footer__ul {
-  list-style-type: none;
-  padding: 0;
-}
-.footer__a {
-  color: white;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 500;
-}
-
-.footer__logo {
-  margin-right: 5px;
-}
-
-.footer__logo-2 {
-  margin-right: 4px;
-  font-size: 7px;
-}
-
 /* ---------- PAGE MENU DELICES ----------------  */
 /* ---- HEADER ------- */
 .menu-header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .menu-header__lien {
   position: relative;
@@ -406,8 +354,8 @@ body {
 }
 .menu-liste__lien {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: black;
 }
@@ -419,8 +367,8 @@ body {
   flex-shrink: 0;
 }
 .menu-liste__lien:hover .a {
-  -webkit-animation: tourne-logo 0.5s;
-          animation: tourne-logo 0.5s;
+  -webkit-animation: rotations 0.5s;
+          animation: rotations 0.5s;
 }
 .menu-liste__lien:hover .menu-liste__strong {
   right: 65px;
@@ -481,4 +429,45 @@ body {
 .texte-header__bouton--menu {
   padding: 13px 40px;
   font-size: 13px;
+}
+
+/* ------------- HEADER -------------- */
+.header__titre {
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin: 12px 0 5px 0;
+}
+
+/* ----------- FOOTER ------------- */
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer__titre {
+  color: white;
+  font-family: Shrikhand;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+.footer__ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer__a {
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.footer__logo {
+  margin-right: 5px;
+}
+
+.footer__logo-2 {
+  margin-right: 4px;
+  font-size: 7px;
 }/*# sourceMappingURL=main.css.map */

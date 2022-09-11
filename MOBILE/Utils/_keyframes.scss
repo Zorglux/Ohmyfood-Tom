@@ -6,13 +6,13 @@
         transform:scale(1); 
     }
     100% {
-        transform:scale(0)
+        transform:scale(0);
     }
 }
 
-// keyframe du trait qui tourne 
+// keyframe du trait qui tourne + checkmark
 
-@keyframes tournicoti {
+@keyframes rotations {
     to {
         transform:rotate(360deg);
     }
@@ -20,20 +20,11 @@
 
 // Keyframe du burger qui tourne
 
-@keyframes tournicoti-burger {
+@keyframes rotations-inverse {
     to {
         transform:rotate(-360deg);
     }
 }
-
-// keyframe qui fais tourner le checkmarck
-
-@keyframes tourne-logo{
-    to{
-        transform:rotate(360deg);
-    }
-}
-
 // keyframe du délai sur MENU 
 
 @keyframes apparition {

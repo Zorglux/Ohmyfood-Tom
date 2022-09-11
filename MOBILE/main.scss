@@ -6,150 +6,56 @@
 @import "./Composants/loader.scss";
 
 @import "./Pages/accueil";
+@import "./Pages/menu.scss";
 
 
-/* ---------- PAGE MENU DELICES ----------------  */ 
 
 
-/* ---- HEADER ------- */ 
-.menu-header{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    &__lien{
-        position:relative; right:50px; top:1px;
-        color:black;
+/* ------------- HEADER -------------- */
+.header__titre{
+    @include logo;
+    text-align:center;
+    margin: 12px 0 5px 0;
     }
-    &__logo{
-        @include logo;
-        margin: 7px 0 3px 0;
-    }
-}
 
 
-/* -------- IMAGE SOUS LE HEADER ------- */ 
-.menu-sous-header__image{
-    height: 200px;
-    width:100%;
-    object-fit: cover;
-}
 
 
-/* ---------- ARTICLE ENTREE PLAT DESSERT ------ */ 
-.menu-article{
-    position:relative;
-    margin-top:-35px;
-    padding: 1px 12px 0 12px;
-    background-color: $fond-gris;
-    border-radius: 30px 30px 0 0;
-    &__div{
-        display:flex;
-        align-items: center;
-    }
+
+
+
+/* ----------- FOOTER ------------- */ 
+.footer{
+    background-color:#353535;
+    padding:25px;
     &__titre{
-        @include logo;
-        margin: 15px 0 0 0;
-    }
-}
-
-
-/* ------------------- LISTE DANS L'ARTICLE --------------- */ 
-.menu-liste{
-    list-style-type: none;
-    padding:0;
-    animation: apparition 0.7s both;
-    @for $i from 1 through 3{
-        &:nth-child(#{$i}){
-            animation-delay: 300ms * $i;
-        }
-    }
-    &__titre{
-        font-weight:300;
-        text-transform: uppercase;
-        font-size:12px;
-        &::after{
-            display:flex;
-            content:"";
-            border: solid #99e2d0 1.2px;
-            background-color: #99e2d0;
-            width:28px;
-            margin-top:3px;
-        }  
-
-    }
-    &__lien{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color:black;
-        &:hover .menu-liste__animation{
-            width:50px;
-            visibility: visible;
-            transition:0.4s;
-            margin-left:0;
-            flex-shrink: 0;
-            }
-        &:hover .a{
-            animation: tourne-logo 0.5s;
-        }
-        &:hover .menu-liste__strong{
-            right:65px ;
-            transition:0.4s
-        }
-    }
-    &__strong{
-        position:absolute; right:15px;
+        color:white;
+        font-family: $police-titre;
+        font-size:13px;
+        font-weight:400;
+        margin:0;
     }
     &__ul{
-    padding:0;
+        list-style-type: none;
+        padding:0;
     }
-    &__li{
-        box-shadow: 0 0 12px 0 #c3c3c3;
-        border-radius:15px;
-        margin-bottom: 15px;
-        overflow: hidden;
-    }
-    &__h2{
-        font-size:14px;
-        margin:0;
-        @include trois-petits-points;
-        
-    }
-    &__p{
-            font-weight:300;
-            font-size:12px;
-            margin: 6px 0 0 0;
-            @include trois-petits-points;
-    }
-    &__div{
-        margin:10px 40px 10px 10px;
-        overflow: hidden;
-    }
-    &__animation{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        visibility: hidden;
-        width: 0%;
-        height: 60px;
-        border-radius: 0 15px 15px 0;
-        color: white;
-        font-size: 18px;
-        background-color: #99e2d0;
+    &__a{
+        color:white;
+        text-decoration: none;
+        font-size:11px;
+        font-weight:500;
     }
 }
 
-
-/* ----- bouton commander ----------- */ 
-.menu-bouton__div{
-    display:flex;
-    justify-content: center;
-    padding: 40px 0;
+.footer__logo{
+    margin-right:5px;
+}
+.footer__logo-2{
+    margin-right:4px;
+    font-size:7px;
 }
 
-.texte-header__bouton--menu{
-    padding:13px 40px;
-    font-size:13px;}
+
+
 
 
