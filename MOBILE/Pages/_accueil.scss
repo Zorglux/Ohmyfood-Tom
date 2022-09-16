@@ -34,7 +34,7 @@
     &__bouton{
         text-decoration:none;
         color:white;
-        background-image: linear-gradient(to top, rgba(181, 57, 146, 0.959), rgba(240, 110, 205, 0.867));
+        background-image: linear-gradient(to left top, #a15fd3,#f070da);
         font-size:11px;
         font-weight:500;
         border-radius:20px;
@@ -89,6 +89,10 @@
     &:hover{
         background-color:#f5edff;
     }
+    &:hover .vignette__logo{
+       color:$marron;
+    }
+    
 }
 
 
